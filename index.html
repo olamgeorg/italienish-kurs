@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Pronto! Italienisch A1 & A2 Integrationskurs Quiz</title>
+    <!-- PWA configuration -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Pronto! Quiz" />
+    <link rel="apple-touch-icon" href="https://img.icons8.com/color/192/000000/italy-circular.png" />
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/512/000000/italy-circular.png" />
+  </head>
+  <body class="bg-slate-900 select-none overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker erfolgreich registriert!', reg.scope))
+            .catch(err => console.warn('Service Worker Registrierung fehlgeschlagen:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

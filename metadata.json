@@ -1,0 +1,6 @@
+{
+  "name": "Italienisch A1 & A2 Integrationsskurs Quiz",
+  "description": "Eine voll funktionsfähige PWA-Lernquiz-App für den italienischen Integrationskurs (Niveaus A1 und A2) mit modularer Fragengenerierung (über 1000 Fragen pro Themenbereich) und Offline-Unterstützung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
